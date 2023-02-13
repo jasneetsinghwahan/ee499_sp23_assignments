@@ -7,3 +7,6 @@
 [submodule "deep-learning-with-python-notebooks"]
 	path = deep-learning-with-python-notebooks
 	url = https://github.com/keithchugg/deep-learning-with-python-notebooks.git
+[submodule "machine_learning_refined"]
+	path = machine_learning_refined
+	url = https://github.com/jermwatt/machine_learning_refined.git
