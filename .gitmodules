@@ -1,6 +1,3 @@
-[submodule "ee499_ml_spring23"]
-	path = ee499_ml_spring23
-	url = https://github.com/keithchugg/ee499_ml_spring23.git
 [submodule "ee559_spring2023"]
 	path = ee559_spring2023
 	url = https://github.com/keithchugg/ee559_spring2023.git
