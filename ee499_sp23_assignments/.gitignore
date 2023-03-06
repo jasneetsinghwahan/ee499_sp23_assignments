@@ -1,0 +1,13 @@
+# ignore all .jpg and .png files
+*.png
+*.jpg
+
+# ignore all directpries whose names are graphs and figures
+graphs/
+figures/
+
+# ignore vs code adminsitrai files
+*.code-workspace
+
+# ignore zip files
+*.zip
