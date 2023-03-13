@@ -18,4 +18,6 @@ __MACOSX/
 
 # ignore .vscode
 .vscode/
+../ML.code-workspace
+./ML.code-workspace
 ML.code-workspace
