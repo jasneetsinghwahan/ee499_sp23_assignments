@@ -11,3 +11,10 @@ figures/
 
 # ignore zip files
 *.zip
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+__MACOSX/
+
+# ignore .vscode
+.vscode/
