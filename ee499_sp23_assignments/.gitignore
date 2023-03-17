@@ -2,9 +2,12 @@
 *.png
 *.jpg
 
-# ignore all directpries whose names are graphs and figures
-graphs/
-figures/
+# ignore all directories whose names include following anywhere in the repo
+**/graphs/
+**/figures/
+**/readData/
+**/img/
+**/data/
 
 # ignore vs code adminsitrai files
 *.code-workspace
@@ -18,6 +21,7 @@ __MACOSX/
 
 # ignore .vscode
 .vscode/
+**/.vscode/
 ../ML.code-workspace
 ./ML.code-workspace
 ML.code-workspace
