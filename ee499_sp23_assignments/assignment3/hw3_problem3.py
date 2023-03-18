@@ -115,6 +115,9 @@ def kmeans_fit(x, N_clusters, N_iterations, num_init, epsilon=1e-3):
     # end of all initializations
     return cluster_heads_best, cluster_assignments_best, loss_best 
 
+#------------------------------
+# program begins here 
+#------------------------------
 N_clusters = np.arange(1, 5)
 loss_values = []
 cluster_heads = []
@@ -148,16 +151,34 @@ for num_clusters in N_clusters:
     plt.savefig(fig_fname_abs_path,format='jpg',bbox_inches='tight')
     plt.show()
     """log all required outputs"""
+    unique, counts = np.unique(cluster_assignments[-1], return_counts=True)
     if username == "jasne":
         if not os.path.exists(log_fname_abs_path):    
             with open(log_fname_abs_path, 'w', newline='') as file:
                 writer = csv.writer(file)
-                writer.writerow(["time","No. of clusters","loss", "random_seed"])
-                writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed])
+                if num_clusters == 1:
+                    writer.writerow(["time","No. of clusters","loss", "random_seed", "Cluster0 count"])
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0]])
+                if num_clusters == 2:
+                    writer.writerow(["time","No. of clusters","loss", "random_seed", "Cluster0 count","Cluster1 count"])
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1]])
+                if num_clusters == 3:
+                    writer.writerow(["time","No. of clusters","loss", "random_seed", "Cluster0 count","Cluster1 count", "Cluster2 count"])
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1], counts[2]])
+                if num_clusters == 4:
+                    writer.writerow(["time","No. of clusters","loss", "random_seed", "Cluster0 count","Cluster1 count", "Cluster2 count", "Cluster3 count"])
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1], counts[2], counts[3]])
         else:
             with open(log_fname_abs_path, 'a', newline='') as file:
                 writer = csv.writer(file)
-                writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed])
+                if num_clusters == 1:
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0]])
+                if num_clusters == 2:
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1]])
+                if num_clusters == 3:
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1], counts[2]])
+                if num_clusters == 4:
+                    writer.writerow([fn_time_string, num_clusters, loss_values[-1],random_seed, counts[0], counts[1], counts[2], counts[3]])
 
 plt.figure()
 plt.plot(N_clusters, loss_values, color='b', linestyle='--', marker='o')
