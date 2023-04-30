@@ -10,3 +10,6 @@
 [submodule "ee499_ml_spring23"]
 	path = ee499_ml_spring23
 	url = https://github.com/keithchugg/ee499_ml_spring23.git
+[submodule "MLLB"]
+	path = MLLB
+	url = https://github.com/Keitokuch/MLLB.git
