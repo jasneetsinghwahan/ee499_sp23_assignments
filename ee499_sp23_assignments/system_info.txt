@@ -1,24 +1,7 @@
-kernel version: 5.15.0-71-generic
------------
-clang version=clang version 10.0.0-4ubuntu1 
-Target: x86_64-pc-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
------------
-bison version=bison (GNU Bison) 3.5.1
-Written by Robert Corbett and Richard Stallman.
-
-Copyright (C) 2020 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
------------
-llvm-config version=10.0.0
------------
-cmake version=cmake version 3.16.3
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
------------
-gcc version=gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
-Copyright (C) 2019 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Date: 2023-05-03 15:22:33
+Kernel version: 5.15.0-71-generic
+Clang version: clang version 10.0.0-4ubuntu1 
+Bison version: bison (GNU Bison) 3.5.1
+LLVM version: 10.0.0
+CMake version: cmake version 3.16.3
+GCC version: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
