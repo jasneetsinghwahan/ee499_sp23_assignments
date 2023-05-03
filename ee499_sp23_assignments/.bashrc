@@ -97,6 +97,9 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# custom aliases
+alias gtmllb='cd ~/study/dirkernelml/ee499_sp23_assignments/MLLB && pwd'
+alias gtmyrepo='cd ~/study/dirkernelml/ee499_sp23_assignments/ee499_sp23_assignments && pwd'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

@@ -13,3 +13,6 @@
 [submodule "MLLB"]
 	path = MLLB
 	url = https://github.com/Keitokuch/MLLB.git
+[submodule "kernel/learning-ebpf"]
+	path = kernel/learning-ebpf
+	url = https://github.com/lizrice/learning-ebpf.git
