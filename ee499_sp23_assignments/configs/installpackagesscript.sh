@@ -1,7 +1,12 @@
 #!/usr/bin/bash
 
+# for ubuntu 20.04
+#https://stackoverflow.com/questions/33481974/importerror-no-module-named-pandas
+sudo apt install python3-pandas
+sudo apt install python3-pip
+
 conda install numpy
-conda install pandas
+#conda install pandas
 conda install seaborn
 conda install matplotlib
 conda install scikit-learn
