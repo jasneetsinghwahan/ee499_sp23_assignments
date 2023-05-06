@@ -16,3 +16,6 @@
 [submodule "kernel/learning-ebpf"]
 	path = kernel/learning-ebpf
 	url = https://github.com/lizrice/learning-ebpf.git
+[submodule "submodules/linux-4.15-lb.git"]
+	path = submodules/linux-4.15-lb.git
+	url = https://github.com/Keitokuch/linux-4.15-lb.git
