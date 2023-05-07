@@ -3605,3 +3605,25 @@ ii  zenity-common                              3.32.0-5                         
 ii  zip                                        3.0-11build1                        amd64        Archiver for .zip files
 ii  zlib1g:amd64                               1:1.2.11.dfsg-2ubuntu1.5            amd64        compression library - runtime
 ii  zlib1g-dev:amd64                           1:1.2.11.dfsg-2ubuntu1.5            amd64        compression library - development
+rc  linux-image-5.15.0-67-generic              5.15.0-67.74~20.04.1                amd64        Signed kernel image generic
+ii  linux-image-5.15.0-71-generic              5.15.0-71.78~20.04.1                amd64        Signed kernel image generic
+ii  linux-image-5.15.0-72-generic              5.15.0-72.79~20.04.1                amd64        Signed kernel image generic
+ii  linux-image-generic-hwe-20.04              5.15.0.72.79~20.04.33               amd64        Generic Linux kernel image
+Sat 06 May 2023 06:08:09 PM PDT
+config-5.15.0-71-generic
+config-5.15.0-72-generic
+efi
+grub
+initrd.img
+initrd.img-5.15.0-71-generic
+initrd.img-5.15.0-72-generic
+initrd.img.old
+memtest86+.bin
+memtest86+.elf
+memtest86+_multiboot.bin
+System.map-5.15.0-71-generic
+System.map-5.15.0-72-generic
+vmlinuz
+vmlinuz-5.15.0-71-generic
+vmlinuz-5.15.0-72-generic
+vmlinuz.old
