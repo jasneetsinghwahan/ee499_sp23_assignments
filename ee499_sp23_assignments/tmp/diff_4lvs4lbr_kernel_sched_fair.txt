@@ -1,0 +1,28 @@
+37a38,39
+> #include <linux/perf_event.h>
+> 
+6968a6971,6972
+>     
+>     unsigned int test_aggressive; // JC
+7072a7077,7078
+>     env->test_aggressive = 0;
+> 
+7120a7127,7128
+>     env->test_aggressive = 1;
+> 
+9372a9381,9395
+> 
+>     // JC lb update
+>     if (1) {
+>         u64 enabled, running;
+>         if (this_rq->pe_0) {
+>             this_rq->perf_count_0 = perf_event_read_value(this_rq->pe_0, &enabled, &running);
+>         } else {
+>             this_rq->perf_count_0 = -1;
+>         }
+>         if (this_rq->pe_1) {
+>             this_rq->perf_count_1 = perf_event_read_value(this_rq->pe_1, &enabled, &running);
+>         } else {
+>             this_rq->perf_count_1 = -1;
+>         }
+>     }

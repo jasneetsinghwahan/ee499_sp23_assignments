@@ -1,0 +1,24 @@
+name: kernelml
+ 
+dependencies:
+    - numpy
+    - pandas
+    - seaborn
+    - matplotlib
+    - scikit-learn
+    - qtconsole
+    - openpyxl
+    - conda-forge::xlsxwriter
+    - anaconda::h5py
+    - conda-forge::autograd
+    - pytorch::pytorch
+    - scipy
+    - tqdm
+    - pip:
+        - tensorflow
+        - torchvision
+        - opencv-python
+        - imutils
+        - chardet
+        - charset-normalizer
+        - pydot
