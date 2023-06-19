@@ -15,6 +15,9 @@ bison_version=$(bison --version | head -n 1)
 llvm_version=$(llvm-config --version)
 cmake_version=$(cmake --version | head -n 1)
 gcc_version=$(gcc --version | head -n 1)
+gpp_version=$(g++ --version | head -n 1)
+gdb_version=$(gdb --version | head -n 1)
+ld_version=$(ld --version | head -n 1)
 ubuntu_version=$(cat /etc/lsb-release)
 linker_version=$(ld -v)
 make_version=$(make --version)
@@ -30,6 +33,9 @@ echo "bison version: $bison_version"
 echo "LLVM version: $llvm_version"
 echo "cMake version: $cmake_version"
 echo "gcc version: $gcc_version"
+echo "g++ version: $gpp_version"
+echo "gdb version: $gdb_version"
+echo "ld version: $ld_version"
 echo "linker version: $linker_version"
 echo "make version: $make_version"
 echo "util-linux version: $util_linux_version"
@@ -44,7 +50,10 @@ echo "Clang version: $clang_version" >> system_info.txt
 echo "Bison version: $bison_version" >> system_info.txt
 echo "LLVM version: $llvm_version" >> system_info.txt
 echo "CMake version: $cmake_version" >> system_info.txt
-echo "GCC version: $gcc_version" >> system_info.txt
+echo "gcc version: $gcc_version" >> system_info.txt
+echo "g++ version: $gpp_version" >> system_info.txt
+echo "gdb version: $gdb_version" >> system_info.txt
+echo "ld version: $ld_version" >> system_info.txt
 echo "linker version: $linker_version" >> system_info.txt
 echo "make version: $make_version" >> system_info.txt
 echo "util-linux version: $util_linux_version" >> system_info.txt
